@@ -1,0 +1,11 @@
+User-agent: *
+
+Disallow: /dashboard/
+Disallow: /login/
+
+Noindex: /dashboard/
+Noindex: /login/
+
+Sitemap: https://balfe-motorsport.com/sitemap.xml
+Sitemap: https://balfe-motorsport.com/sitemap_index.xml
+Sitemap: https://balfe-motorsport.com/sitemap.xml.gz

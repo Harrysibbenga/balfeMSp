@@ -1,0 +1,161 @@
+@import url("https://use.typekit.net/pek6heh.css");
+
+html {
+    scroll-behavior: smooth;
+}
+
+.balfe-line {
+    border: 1px solid red;
+}
+
+.mask {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.flex-center {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.mask.fadeOut {
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 1s ease-out;
+}
+
+.mask.fadeOut .title {
+    transform: translatey(100%);
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.mask.fadeIn {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 1s ease-in;
+}
+
+.mask.fadeIn .title {
+    transform: translatey(0);
+    opacity: 1;
+    transition: all 1s ease-in;
+}
+
+.mask.clicked {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.mask.clicked .title {
+    background-color: rgba(0, 0, 0, 0);
+    transform: translatey(100%);
+    opacity: 0;
+}
+
+.title .text-primary {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.partner-logo.selected {
+    border: 1px solid red;
+}
+
+@media (min-width:992px) {
+    .carousel-item .text-container {
+        position: absolute;
+        top: 10%;
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .logo {
+        width: 200px
+    }
+}
+
+@media (min-width: 576px) and (max-width:767px) {
+    .title .text-primary {
+        font-weight: 900;
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        width: 350px
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    .title .text-primary {
+        font-weight: 900;
+        font-size: 3rem;
+    }
+
+    .logo {
+        width: 450px
+    }
+}
+
+@media (min-width: 992px) and (max-width:1999px) {
+    .title .text-primary {
+        font-weight: 900;
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        width: 600px
+    }
+}
+
+@media (min-width: 1200px) {
+    .title .text-primary {
+        font-weight: 900;
+        font-size: 3rem;
+    }
+
+    .logo {
+        width: 600px
+    }
+}
+
+/* Fonts */
+p.thin {
+    font-family: univia-pro,
+        sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+p,
+body {
+    font-family: univia-pro,
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2 {
+    font-family: univia-pro,
+        sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h3,
+h4,
+h5 {
+    font-family: univia-pro,
+        sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
